@@ -46,6 +46,17 @@ public class MetodoArrayAlumnos {
            
         }
         
+        public void amosar(){
+            String nomBus = JOptionPane.showInputDialog("Nome buscar:");
+            boolean atopado=false;//non se atopou
+            for ( int i= 0;i<nomes.length;i++){
+                if((nomes[i].compareToIgnoreCase(nomBus)==0)){
+                    JOptionPane.showMessageDialog(null, "nota=");
+                    atopado = true;
+                }
+            }
+        }
+        
         public void ordenarcion(){
             float aux;
             String aux1;
@@ -59,15 +70,8 @@ public class MetodoArrayAlumnos {
                        aux1 = nomes[x];
                        nomes[x]=nomes[j];
                        nomes[j] =aux1;
-                       
-                       
-                       
-                       
-            
-                    
-                       
-                     
-                    }
+           
+             }
                 
 }
 
